@@ -6,47 +6,6 @@ It also allows you to update an Attribute/Type Definition if the attribute alrea
 
 NOTES:  This script assumes that the user has complete access rights to the attribute definitions
 		and will cause a run-time error if this is not the case.
-
-version	developed on	date		by		        notes
-1.0.0	DOORS 5.2 PC	02/07/02	Telelogic NA
-
-2.0.0	DOORS 7.1 PC	14 June 04	Ian Zimmermann (Telelogic)
-									Modified to allow for updating Type Definitions of Enumeration, Integer, Date, and Real
-									if it already exists in the destination Module.
-									It will add, modify, re-order, and remove values accordingly
-									Problems: if an Enum value is modified the attributes using that value
-									are reset to default because this is recognized as a new value.
-									The Attribute Definitions are also updated when the option is selected.
-
-2.0.1    				17 June 04  Ian Zimmermann (Telelogic)
-									Modified to Exclude deleted modules to prevent run-time error
-
-                        18 June 04  Jeremy Dick (Telelogic)
-                                    Modified to place into kitchen.
-                                    Added some error checking.
-
-2.1.0			        18 June 04  Ian Zimmermann (Telelogic)
-									Modified to provide the option of Only modifying attributes and not creating them.
-
-2.1.1			        22 July 04  Ian Zimmermann (Telelogic)
-                                    Added attribute type to list of attributes.
-
-                        28 July 04  Merged into kitchen.
-
-2.2.0					05 Jan  05  Ian Zimmermann (Telelogic)
-									Added the ability to also copy/modify the access rights of the Attrs/Type Definitions
-
-2.2.1					02 Sept 05	Ian Zimmermann (Telelogic)
-									Fixed a bug where the access rights of existing groups/users are not cleared out
-									Fixed a bug for v7.1 where an error occurs when trying to modify the Type access rights
-									This bug was not observed in v8.0
-
-2.2.2					15 Sept 05	Jeremy Dick (Telelogic)
-									Fixed a bug associated with mixed use of real and logical colours.
-									Added check on colours bigger than 62.
-									Switched setRealColorOptionForTypes on.
-
-
 Known Bugs:  [Fixed]there appears to be a bug in this version when an enumeration cannot be modified due to a color error 64, the remaining access
 rights do not transfer correctly after the first encounter of the error.
 
