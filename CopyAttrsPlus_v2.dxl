@@ -1,5 +1,3 @@
-// Copy Attrs Plus
-
 /*
 This script allows the user to copy the attributes from the current to multiple others.
 It also allows you to update an Attribute/Type Definition if the attribute already exists.
